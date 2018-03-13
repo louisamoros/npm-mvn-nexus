@@ -14,6 +14,22 @@ How to deploy an angular web application to nexus3 in zip format ?
 
 `mvn clean package`
 
+- set credentials for maven to access nexus
+
+`vi ~/.m2/settings`
+
+`
+  <!-- add those lines -->
+  <servers>
+    <server>
+      <id>nexus-snapshots</id>
+      <username>deployment</username>
+      <password>the_pass_for_the_deployment_user</password>
+    </server>
+  </servers>
+
+`
+
 - deploy angular zipped web application to nexus snapshots
 
 `mvn clean deploy`
