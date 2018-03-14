@@ -10,7 +10,6 @@
       <directory>.</directory>
       <outputDirectory>.</outputDirectory>
       <includes>
-        <include>src</include>
         <include>.angular-cli.json</include>
         <include>.editorconfig</include>
         <include>.gitignore</include>
@@ -24,6 +23,13 @@
         <include>tslint.json</include>
         <include>typedoc.json</include>
         <include>zuul-binder.conf.json</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>src</directory>
+      <outputDirectory>src</outputDirectory>
+      <includes>
+        <include>*</include>
       </includes>
     </fileSet>
   </fileSets>
