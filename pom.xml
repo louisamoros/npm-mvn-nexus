@@ -6,6 +6,7 @@
 
     <groupId>com.louisamoros</groupId>
     <artifactId>core</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -34,7 +35,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
                     <descriptor>src/assembly/bin.xml</descriptor>
-                    <finalName>apache-maven-cookbook-${pom.version}</finalName>
+                    <finalName>apache-maven-cookbook-${project.version}</finalName>
                 </configuration>
                 <executions>
                     <execution>
